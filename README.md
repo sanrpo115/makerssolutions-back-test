@@ -3,7 +3,7 @@
 
 Este repositorio contiene el código fuente BackEnd a la solución a una prueba técnica diseñada por Makers Solutions Fintech, el proyecto se realizó en lenguaje Java y sigue los principios de Clean Architecture para organizar el código en capas y proporcionar una estructura modular y mantenible. 
 
-Utiliza Java 21 y Maven 3.9.6 para la construcción y gestión de dependencias, el proyecto fue realizado por Santiago Restrepo Gallego.
+Utiliza Java 21 y Maven 3.9.6 para la construcción y gestión de dependencias, se conecta directamente a una base de datos alojada en un Serverless llamado **NEON** la configuración de la base de datos para evitar desconexiones por timeout se tiene como 'create-drop' para que cada vez que se ejecute el Backend la base de datos se cree nuevamente y se eviten crasheos por desconexión ya que es un recurso gratuito, este proyecto fue realizado por Santiago Restrepo Gallego.
 
 
 
@@ -19,7 +19,8 @@ Utiliza Java 21 y Maven 3.9.6 para la construcción y gestión de dependencias, 
 
 - JDK 21
 - Maven 3.9.6
-- PostreSQL 16
+- PostreSQL 16 (Se puede configurar localmente)
+  
 ## Ejecución Local
 
 - Clona el repositorio 
